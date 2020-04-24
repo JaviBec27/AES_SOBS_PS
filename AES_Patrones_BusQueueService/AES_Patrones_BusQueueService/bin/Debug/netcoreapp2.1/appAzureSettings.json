@@ -1,0 +1,14 @@
+{
+  "TenantId": "a4ed712e-2ab7-4726-ae2b-cf4c30860016",
+  "ClientId": "268e2f7c-d88f-42ca-a31e-0a05763aaf20",
+  "ClientSecret": "h?zJ17_upYkMsqETRgCHV2dKH3mehq?_",
+  "SubscriptionId": "f3aeec7e-d2a1-47c2-9e3f-149565095787",
+  "DataCenterLocation": "Oeste de EE. UU. 2",
+  "ServiceBusSku": "Standard",
+  "NamespaceName": "pub-sub-patrones",
+  "ResourceGroupName": "Pub_Sub_Patrones",
+  "QueueName": "cola_session",
+  "TopicName": "solicitud_cotizacion",
+  "SubscriptionName": "",
+  "RuleName": "SessionID"
+}

@@ -1,0 +1,84 @@
+// Here you can add other styles
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+    color: #ffffff !important;
+}
+
+[hide] {
+    display: none !important;
+}
+
+.card-body {
+    padding: 0.3rem !important;
+}
+.ui-spinner-input {
+    width: 60px;
+}
+.ui-dialog {
+    max-width: 500px;
+}
+.card {
+    margin-bottom: 2px !important;
+}
+
+.validate-control {
+    color: red;
+    background: none;
+  }
+  
+
+.form-control[readonly] {
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.ng-select.ng-select-disabled>.ng-select-container {
+    background-color: #c2cfd6;
+    opacity: 1;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #19376B;
+    border-radius: 4px;
+    border-color: #19376B;
+}
+
+.btn-primary:hover {
+    background-color: #c2c2c2;
+    color: black;
+    border-style: solid;
+}
+
+
+:host /deep/ body ui-paginator {
+    background-color: #f4f4f4 !important;
+}
+
+body .ui-widget-header {
+    background: #f4f4f4!important;
+}
+
+body .ui-button:active {
+    background-color: #19376B!important;
+}
+
+.card {
+    border-radius: 4px;
+}
+
+li.nav-item.ng-star-inserted.active,
+li.nav-item.active:focus {
+    background-color: red;
+}
+
+.no_color {
+    color: transparent;
+}
+
+.light-icon {
+    color: #bebebe;
+}

@@ -1,0 +1,50 @@
+
+  .block
+  {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  
+  select.form-control {
+    text-align-last: center;
+  }
+  
+  .Linputs {
+    // background: #c0c0c047;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 4px;
+  }
+  .radio-inline{
+    margin: 4px;
+  }
+  
+  .col-md-5 {
+    margin: auto;
+  }
+  .col-center{
+    float: none; margin: auto;
+  }
+  
+  .col-left {
+    margin-left: 30px;
+  }
+  i.fa.fa-question-circle {
+    margin-top: 4px;
+    margin-right: 5px;
+    color: var(--principalColor);
+  }
+  i.fa.fa-question-circle:hover {
+    color: var(--btnHoverColor);
+    cursor: help;
+  }
+  .col-md-5.span-col {
+    margin: unset;
+    padding-right: 0px;
+  }
+  

@@ -1,0 +1,32 @@
+<div class="notification-header">
+  <div ngbDropdown class="d-inline-block">
+    <a class="notification-principal" (click)="openNotification()">
+      <li class="btn btn-default" id="dropdownNotify" ngbDropdownToggle>
+        <i class="fa fa-cart-plus"></i>
+        <span 
+          class="badge badge-pill badge-danger notification-data">{{quantity}}
+        </span>
+      </li>
+    </a>
+
+    <div  ngbDropdownMenu aria-labelledby="dropdownNotify" class="scrollbar">
+      <div  class="dropdown-item" *ngFor="let item of carNotifications">
+        <div class="pull-left notification-icon" placement="top" container="body">
+          <i class="tir ti-ticket ti-2x"> </i>
+
+        </div>
+        <h4 class="notification-title">{{item.nombre}} ({{item.cantidad}})</h4>
+        <p class="notification-description">{{item.descripcions}} </p>
+      </div>
+      <div *ngIf="carNotifications.length>0;else template" class="col-6 text-right">
+        <a [routerLink]="" (click)="onNewOrder()">{{'lblFinishOrder'|translate}}</a>
+      </div>
+      <ng-template #template>
+        <span 
+        class="">{{'lblGraphEmpty'|translate}}
+      </span>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

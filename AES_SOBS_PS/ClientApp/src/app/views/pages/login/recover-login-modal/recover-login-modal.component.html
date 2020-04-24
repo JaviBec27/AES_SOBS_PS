@@ -1,0 +1,67 @@
+<div class="modal-content">
+  <form [formGroup]="recoveryForm" (ngSubmit)="onRecoverySubmit()">
+    <div class="modal-body">
+      <div class="col-sm-12  div6">
+        <label>{{ 'login_forgot' | translate }}</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="recover"
+            formControlName="recOption"
+            (change)="changeRecover()"
+          />
+          {{ "login_recoverP" | translate }}
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="reset"
+            formControlName="recOption"
+            (change)="changeRecover()"
+          />
+          {{ "login_resetP" | translate }}
+        </div>
+        <label style="margin-top: 0.5rem" *ngIf="recoverOption == 'recover'">{{
+          "login_enterEmail" | translate
+        }}</label>
+        <input
+          type="email"
+          class="form-control"
+          style="margin-bottom: 0.5rem"
+          formControlName="email"
+          *ngIf="recoverOption == 'recover'"
+          placeholder="Email"
+        />
+        <label style="margin-top: 0.5rem" *ngIf="recoverOption == 'reset'">{{
+          "login_enterUser" | translate
+        }}</label>
+        <input
+          type="text"
+          class="form-control"
+          style="margin-bottom: 0.5rem"
+          formControlName="user"
+          *ngIf="recoverOption == 'reset'"
+          placeholder="Username"
+        />
+        <button
+          class="btn btn-sm btn-primary highlight event_btn_save"
+          type="submit"
+          style="margin: 0.5rem; float: right;"
+          [disabled] = "!recoveryForm.valid"
+        >
+          {{ "Grid_Common_btn_Send" | translate }}
+        </button>
+        <button
+          (click)="cancel()"
+          class="btn btn-sm btn-danger highlight cancel_btn"
+          type="reset"
+          style="margin-top: 0.5rem; float: right;"
+        >
+          {{ "Popup_Common_btn_Cancel" | translate }}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

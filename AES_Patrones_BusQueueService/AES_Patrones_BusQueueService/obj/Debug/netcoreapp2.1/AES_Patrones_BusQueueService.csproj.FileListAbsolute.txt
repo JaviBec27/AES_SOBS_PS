@@ -1,0 +1,10 @@
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\appAzureSettings.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.deps.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.runtimeconfig.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.runtimeconfig.dev.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.pdb
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\obj\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.AssemblyInfoInputs.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\obj\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.AssemblyInfo.cs
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\obj\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\AES_Patrones_BusQueueService\AES_Patrones_BusQueueService\obj\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.pdb

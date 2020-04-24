@@ -1,0 +1,141 @@
+.scrollbar {
+    height: auto;
+    max-height: 360px;
+    overflow-x: hidden;
+    width: 250px;
+  }
+  
+  
+  .notification-title{
+    font-size:small;
+  }
+  .notification-description{
+    font-size: x-small;
+    margin-bottom: 0;
+  }
+  
+  .notification-icon{
+  
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .notification-item{
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  }
+  
+  .dropdown-item {
+    position: relative;
+    padding: 10px 5px;
+    border-bottom: 1px solid #c2cfd6;
+  }
+  
+  .notification-header{
+    width: 60px;
+  }
+  .notification-principal:hover{
+    cursor: pointer;
+  }
+  
+  .notification-data{
+    margin-left: -5px;
+    font-size: 10px;
+  }
+  
+  .btn .badge {
+    position: relative;
+    top: -16px;
+  }
+  .notification-loading{
+  width: 20px;
+  height: 20px;
+  }
+  .notification-reload{
+    box-shadow: none;
+  }
+  
+  
+  
+  
+  @keyframes ldio {
+    0% {
+      transform: rotate(0)
+    }
+  
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+  
+  .ldio div {
+    box-sizing: border-box !important;
+  }
+  
+  .ldio>div {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 16px;
+    left: 16px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    border-color: #1d3f72 transparent #1d3f72 transparent;
+    animation: ldio 1s linear infinite;
+  }
+  
+  .ldio>div:nth-child(2) {
+    border-color: transparent
+  }
+  
+  .ldio>div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+  
+  .ldio>div:nth-child(2) div:before,
+  .ldio>div:nth-child(2) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -8px;
+    left: 22px;
+    background: #1d3f72;
+    border-radius: 50%;
+    box-shadow: 0 60px 0 0 #1d3f72;
+  }
+  
+  .ldio>div:nth-child(2) div:after {
+    left: -8px;
+    top: 22px;
+    box-shadow: 60px 0 0 0 #1d3f72;
+  }
+  
+  .loading-ring {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+  }
+  
+  .ldio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.2);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+  }
+  
+  .ldio div {
+    box-sizing: content-box;
+  }
+  .fa {
+
+    font-size: xx-large;
+}

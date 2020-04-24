@@ -1,0 +1,31 @@
+<div class="animated fadeIn">
+
+    <div class="card">
+        <div class="card-header ">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="tir ti-tank-quality ti-2x  dark-icon"></i>
+                    <span class="label info"> {{'lblCatalogProvider'|translate|uppercase}}
+                    </span>
+                    <div class="pull-right">
+                        <div style="text-align: left">
+                                <button class="btn btn-primary" (click)="add()" >
+                                    <i class="fa fa-plus"></i>
+                                    {{'lblAdd'|translate}}
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <app-provider-view-table #productList></app-provider-view-table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

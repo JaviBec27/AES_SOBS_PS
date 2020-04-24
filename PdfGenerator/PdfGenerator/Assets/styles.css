@@ -1,0 +1,39 @@
+﻿.header {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-top: 2px;
+}
+
+h1 {
+    color: green;
+}
+
+.globalInfo {
+    padding-left: 5%;
+
+}
+
+img {
+    padding: 2%;
+    float:right; 
+    width: 150px; 
+    height: 100px;
+}
+
+table {
+    width: 92%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+table th {
+    background-color: green;
+    color: white;
+}

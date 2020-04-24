@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-md-12">
+<p-confirmDialog acceptLabel="{{'lblYes'|translate}}" rejectLabel="{{'lblNot'|translate}}"></p-confirmDialog>
+<p-dataView #dv [value]="lstProducts" [paginator]="true" [rows]="20" paginatorPosition="both" filterBy="brand"
+[sortField]="sortField" [sortOrder]="sortOrder">
+<p-header>
+  <div class="ui-helper-clearfix">
+      <div class="ui-g">
+          <div class="ui-g-12 ui-md-4">
+              <p-dropdown [options]="sortOptions" placeholder="Sort By" (onChange)="onSortChange($event)" [style]="{'min-width':'140px'}"></p-dropdown>
+          </div>
+          <div class="ui-g-6 ui-md-4 filter-container">
+              <div style="position:relative">
+                  <input type="search" pInputText placeholder="Search by brand" (input)="dv.filter($event.target.value)">
+              </div>
+          </div>
+          <div class="ui-g-6 ui-md-4" style="text-align:right">
+              <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+          </div>
+      </div>
+  </div>
+</p-header>
+<ng-template let-car pTemplate="listItem">
+  <div class="ui-g-12">
+      <div class="car-details">
+          <div>
+              <img src="assets/img/Jaguar.png">
+              <div class="ui-g">
+                <div class="ui-g-12">{{'lblName' | translate}}: <b>{{car.nombre}}</b></div>
+                <div class="ui-g-12">{{'lblPrice' | translate}}: <b>{{car.precio}}</b></div>
+                <div class="ui-g-12">{{'lblQuantity' | translate}}: <b>{{car.cantidad}}</b></div>
+              </div>
+              <div class="ui-g">
+                <div class="ui-g-12">{{'lblDescription' | translate}}: <b>{{car.descripcion}}</b></div>
+            </div>
+          </div>
+          <div class="ui-g">
+            <!-- <button pButton type="button" icon="pi pi-search" (click)="selectedProduct($event, car)"></button> -->
+            <button pButton type="button" icon="fa fa-plus" (click)="selectProduct($event, car)"></button>
+          </div>          
+      </div>
+  </div>
+</ng-template>
+<ng-template let-car pTemplate="gridItem">
+  <div style="padding:.5em" class="ui-g-12 ui-md-3">
+      <p-panel [header]="car.vin" [style]="{'text-align':'center'}">
+          <img src="assets/img/Jaguar.png" width="60">
+          <div class="car-detail">{{car.nombre}} - $ {{car.precio}}</div>
+          <hr class="ui-widget-content" style="border-top:0">
+          <!-- <button pButton type="button" icon="pi pi-search" (click)="selectedProduct($event, car)"></button> -->
+          <button pButton type="button" icon="fa fa-plus" (click)="selectProduct($event, car)"></button>
+      </p-panel>
+  </div>
+</ng-template>
+</p-dataView>
+</div>
+</div>
+
+<p-dialog header="Product Detail" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [style]="{width: '225px'}"  (onAfterHide)="onDialogHide()">
+<div class="ui-g" *ngIf="selectedProduct">
+  <div class="ui-g-12" style="text-align:center">
+      <img src="assets/img/Jaguar.png">
+  </div>
+  <div class="ui-g-4">{{'lblName' | translate}}: </div>
+  <div class="ui-g-8">{{selectedProduct.nombre}}</div>
+
+  <div class="ui-g-4">{{'lblPrice' | translate}}: </div>
+  <div class="ui-g-8">${{selectedProduct.precio}}</div>
+
+  <div class="ui-g-4">{{'lblQuantity' | translate}}: </div>
+  <div class="ui-g-8">
+    <p-spinner  [(ngModel)]="quantity"  [min]="1" [max]="100"></p-spinner>
+  </div>
+  <div class="modal-footer">
+    <input
+    type="button"
+    class="btn btn-primary"
+    (click)="submit()"
+    value="{{ 'lblSubmit' | translate }}"
+  />
+  </div>
+
+
+</div>
+</p-dialog> 

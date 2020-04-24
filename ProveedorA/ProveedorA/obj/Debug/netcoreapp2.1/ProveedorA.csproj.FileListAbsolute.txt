@@ -1,0 +1,12 @@
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.csprojAssemblyReference.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.AssemblyInfoInputs.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.AssemblyInfo.cs
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\ProveedorA.deps.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\ProveedorA.runtimeconfig.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\ProveedorA.runtimeconfig.dev.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\ProveedorA.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\ProveedorA.pdb
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\bin\Debug\netcoreapp2.1\AES_Patrones_BusQueueService.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.csproj.CopyComplete
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\ProveedorA\ProveedorA\obj\Debug\netcoreapp2.1\ProveedorA.pdb

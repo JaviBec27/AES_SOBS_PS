@@ -1,0 +1,44 @@
+<header class="app-header navbar">
+  <button
+    class="navbar-toggler d-lg-none"
+    type="button"
+    appMobileSidebarToggler
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand"></a>
+  <div class="nav navbar-nav ml-auto">
+    <div class="d-inline-block pr-2">
+      <li id="category">
+        <select placement="bottom-right" class=" form-control form-control-sm form-control-tory" [(ngModel)]="selectedCategory" (change)="OnCategoryChange()">
+        <option *ngFor="let category of categories" [ngValue]="category">{{category.nombre}}</option>
+        </select>
+        </li>
+    </div>
+
+  <div ngbDropdown placement="bottom-right" class="d-inline-block pr-2">
+    <app-notification-control></app-notification-control>
+    </div>
+    <div class="">
+      <div ngbDropdown placement="bottom-right" class="d-inline-block pr-3">
+        <li class="btn btn-default" id="dropdownBasic1" ngbDropdownToggle>
+          <i>
+            <img
+              src="assets/img/avatars/6.jpg"
+              class="img-avatar"
+              alt="user"
+          /></i>
+        </li>
+
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">
+            <i class="fa fa-user"></i> {{ "lblProfile" | translate }}
+          </button>
+          <button class="dropdown-item" (click)="logout($event)">
+            <i class="fa fa-lock"></i> {{ "lblLogOut" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

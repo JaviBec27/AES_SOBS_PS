@@ -1,0 +1,224 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-md-12">
+        <h5  >{{ "lblTicketInfo" | translate }}
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="frmTicket">
+      <div class="container">
+        <br />
+        <div class="row Linputs" style="padding-bottom: 8px;">
+          <div class="col-md-5 span-col">
+            <!-- <i
+              class="fa fa-question-circle"
+              tooltip="{{ 'lblNoReportTooltip' | translate }}"
+              placement="top"
+            >
+            </i> -->
+            <label for="">{{ "lblUser" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="txtUser"
+                maxlength="25"
+                class="form-control"
+              />
+              <div
+                class="validate-control"
+                *ngIf="
+                  frmTicket.controls['txtUser'].invalid &&
+                  (submitted || frmTicket.controls['txtUser'].touched)
+                "
+              >
+                <span
+                  *ngIf="frmTicket.controls['txtUser'].errors.required"
+                  >{{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+              class="fa fa-question-circle"
+              tooltip="{{ 'lblSedimentWaterTooltip' | translate }}"
+              placement="top"
+            >
+            </i> -->
+            <label for="">{{ "lblPassword" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input
+                type="password"
+                formControlName="txtPassword"
+                maxlength="12"
+                class="form-control"
+              />
+              <div
+              class="validate-control"
+              *ngIf="
+                frmTicket.controls['txtPassword'].invalid &&
+                (submitted || frmTicket.controls['txtPassword'].touched)
+              "
+            >
+              <span
+                *ngIf="frmTicket.controls['txtPassword'].errors.required"
+                >{{ "lblFieldRequired" | translate }}
+              </span>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+              class="fa fa-question-circle"
+              tooltip="{{ 'lblApiGravityTooltip' | translate }}"
+              placement="top"
+            >
+            </i> -->
+            <label for="">{{ "lblTUser" | translate }}  </label>
+           
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <select class="form-control" formControlName="txtUserType">
+                <option [ngValue]="null" selected>{{
+                  "lblSelect" | translate
+                }}</option>
+                <option *ngFor="let item of lstUser" [ngValue]="item.value">{{
+                  item.name
+                }}</option>
+              </select>
+              <div
+              class="validate-control"
+              *ngIf="
+                frmTicket.controls['txtUserType'].invalid &&
+                (submitted || frmTicket.controls['txtUserType'].touched)
+              "
+            >
+              <span
+                *ngIf="frmTicket.controls['txtUserType'].errors.required"
+                >{{ "lblFieldRequired" | translate }}
+              </span>
+            </div>
+            </div>
+          </div>
+          <div *ngIf="frmTicket.controls['txtUserType'].value==1" class="col-md-5 span-col">
+          <label for="">{{ "lblQSystem" | translate }}  </label>
+          </div>
+          <div  *ngIf="frmTicket.controls['txtUserType'].value==1" class="col-center col-md-6">
+            <div class="form-group">
+              <label class="radio-inline">
+                <input
+                  type="radio"
+                  value="true"
+                  formControlName="txtQuotationSystem"
+                  style="margin-left: 40px;"
+                />{{ "lblYes" | translate }}
+              </label>
+              <label class="radio-inline">
+                <input
+                  type="radio"
+                  value="false"
+                  [checked]="true"
+                  formControlName="txtQuotationSystem"
+                />{{ "lblNo" | translate }}
+              </label>            
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+              class="fa fa-question-circle"
+              tooltip="{{ 'lblViscosityTooltip' | translate }}"
+              placement="top"
+            >
+            </i> -->
+            <label for="">{{ "lblContact" | translate }} </label>
+        </div> 
+        <div class="col-center col-md-6">
+            <div class="form-group">
+              <input
+                type="number"
+                formControlName="txtContact"
+                maxlength="10"
+                class="form-control"
+              />
+            <div
+            class="validate-control"
+            *ngIf="
+              frmTicket.controls['txtContact'].invalid &&
+              (submitted || frmTicket.controls['txtContact'].touched)
+            "
+          >
+            <span
+              *ngIf="frmTicket.controls['txtContact'].errors.required"
+              >{{ "lblFieldRequired" | translate }}
+            </span>
+          </div>
+            </div>
+        </div>
+          <div class="col-md-5 span-col">
+              <!-- <i
+                class="fa fa-question-circle"
+                tooltip="{{ 'lblViscosityTooltip' | translate }}"
+                placement="top"
+              >
+              </i> -->
+              <label for="">{{ "lblMail" | translate }} </label>
+          </div> 
+          <div class="col-center col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  formControlName="txtMail"
+                  maxlength="50"
+                  class="form-control"
+                />
+              <div
+              class="validate-control"
+              *ngIf="
+                frmTicket.controls['txtMail'].invalid &&
+                (submitted || frmTicket.controls['txtMail'].touched)
+              "
+            >
+              <span
+                *ngIf="frmTicket.controls['txtMail'].errors.required"
+                >{{ "lblFieldRequired" | translate }}
+              </span>
+            </div>
+              </div>
+          </div>
+          <re-captcha (resolved)="resolved($event)" siteKey="6LcTmegUAAAAAEltgvvES4Bx_bXTp3u6OK7LrKhQ"></re-captcha>
+          <div class="validate-control"
+            *ngIf="frmTicket.controls['txtCaptcha'].invalid && (submitted || frmTicket.controls['txtCaptcha'].touched ) ">
+            <span *ngIf="frmTicket.controls['txtCaptcha'].errors.required">{{'lblFieldRequired'|translate}}
+            </span>
+          </div>
+        
+  
+           
+        </div>
+       
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <input
+      type="button"
+      class="btn btn-primary"
+      (click)="submit()"
+      value="{{ 'lblSubmit' | translate }}"
+    />
+    <input
+      type="button"
+      class="btn btn-danger"
+      (click)="cancel()"
+      value="{{ 'lblCancel' | translate }}"
+    />
+  </div>
+</div>

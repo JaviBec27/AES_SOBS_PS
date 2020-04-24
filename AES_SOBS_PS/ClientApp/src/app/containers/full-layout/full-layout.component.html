@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="app-body" #container>
+    <app-sidebar></app-sidebar>
+    <!-- Main content -->
+    <main class="main" #main>
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <app-aside [container]="container" [mainContainer]="main"></app-aside>
+
+</div>
+<app-loading #loading></app-loading>
+<app-footer></app-footer>

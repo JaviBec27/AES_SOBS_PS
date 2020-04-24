@@ -1,0 +1,200 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-md-12">
+        <h5  >{{ "lblProductInfo" | translate }}
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="frmTicket">
+      <div class="container">
+        <br />
+        <div class="row Linputs" style="padding-bottom: 8px;">
+          <div class="col-md-5 span-col">
+            <!-- <i
+      class="fa fa-question-circle"
+      tooltip="{{ 'lblNoReportTooltip' | translate }}"
+      placement="top"
+    >
+    </i> -->
+            <label for="">{{ "lblName" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input type="text"
+                     formControlName="txtName"
+                     maxlength="25"
+                     class="form-control" />
+              <div class="validate-control"
+                   *ngIf="
+                  frmTicket.controls['txtName'].invalid &&
+                  (submitted || frmTicket.controls['txtName'].touched)
+                ">
+                <span *ngIf="frmTicket.controls['txtName'].errors.required">
+                  {{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+      class="fa fa-question-circle"
+      tooltip="{{ 'lblSedimentWaterTooltip' | translate }}"
+      placement="top"
+    >
+    </i> -->
+
+            <label for="">{{ "lblReference" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input type="text"
+                     class="form-control"
+                     formControlName="txtReference"
+                     placeholder="Código Referencia Interno">
+              <div class="validate-control"
+                   *ngIf="
+                frmTicket.controls['txtReference'].invalid &&
+                (submitted || frmTicket.controls['txtReference'].touched)
+              ">
+                <span *ngIf="frmTicket.controls['txtReference'].errors.required">
+                  {{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+      class="fa fa-question-circle"
+      tooltip="{{ 'lblSedimentWaterTooltip' | translate }}"
+      placement="top"
+    >
+    </i> -->
+
+            <label for="">{{ "lblPrice" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input type="number"
+                     class="form-control"
+                     formControlName="txtPrice"
+                     placeholder="$ COP">
+              <div class="validate-control"
+                   *ngIf="
+                frmTicket.controls['txtPrice'].invalid &&
+                (submitted || frmTicket.controls['txtPrice'].touched)
+              ">
+                <span *ngIf="frmTicket.controls['txtPrice'].errors.required">
+                  {{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+      class="fa fa-question-circle"
+      tooltip="{{ 'lblApiGravityTooltip' | translate }}"
+      placement="top"
+    >
+    </i> -->
+            <label for="">{{ "lblTypeProduct" | translate }}  </label>
+
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <select class="form-control" formControlName="txtTypeProduct">
+                <option [ngValue]="null" selected>
+                  {{
+                  "lblSelect" | translate
+                  }}
+                </option>
+                <option *ngFor="let item of lstTypeProducts" [ngValue]="item.value">
+                  {{
+                  item.name
+                  }}
+                </option>
+              </select>
+              <div class="validate-control"
+                   *ngIf="
+                frmTicket.controls['txtTypeProduct'].invalid &&
+                (submitted || frmTicket.controls['txtTypeProduct'].touched)
+              ">
+                <span *ngIf="frmTicket.controls['txtTypeProduct'].errors.required">
+                  {{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 span-col">
+            <!-- <i
+      class="fa fa-question-circle"
+      tooltip="{{ 'lblViscosityTooltip' | translate }}"
+      placement="top"
+    >
+    </i> -->
+            <label for="">{{ "lblQuantity" | translate }} </label>
+          </div>
+          <div class="col-center col-md-6">
+            <div class="form-group">
+              <input type="number"
+                     formControlName="txtQuantity"
+                     maxlength="50"
+                     class="form-control" />
+              <div class="validate-control"
+                   *ngIf="
+              frmTicket.controls['txtQuantity'].invalid &&
+              (submitted || frmTicket.controls['txtQuantity'].touched)
+            ">
+                <span *ngIf="frmTicket.controls['txtQuantity'].errors.required">
+                  {{ "lblFieldRequired" | translate }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-11">
+            <label for="">{{ "lblImage" | translate }} </label>
+            <p-fileUpload name="demo[]" (onUpload)="onUpload($event)"
+                          accept="image/*" maxFileSize="1000000">
+              <ng-template pTemplate="content">
+                <ul *ngIf="uploadedFiles.length">
+                  <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                </ul>
+              </ng-template>
+            </p-fileUpload>
+          </div>
+          <div class="col-md-11">
+            <div class="form-group">
+              <!-- <i
+        class="fa fa-question-circle"
+        tooltip="{{ 'lblCommentsTooltip' | translate }}"
+        placement="top"
+      >
+      </i> -->
+              <label for="">{{ "lblDescription" | translate }} </label>
+              <textarea maxlength="50"
+                        class="form-control  t-text-area "
+                        rows="3"
+                        formControlName="txtDescription"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <input
+      type="button"
+      class="btn btn-primary"
+      (click)="submit()"
+      value="{{ 'lblSubmit' | translate }}"
+    />
+    <input
+      type="button"
+      class="btn btn-danger"
+      (click)="cancel()"
+      value="{{ 'lblCancel' | translate }}"
+    />
+  </div>
+</div>

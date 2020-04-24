@@ -1,0 +1,15 @@
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\PdfGenerator.deps.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\PdfGenerator.runtimeconfig.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\PdfGenerator.runtimeconfig.dev.json
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\PdfGenerator.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\bin\Debug\netcoreapp2.1\PdfGenerator.pdb
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.RazorAssemblyInfo.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.RazorAssemblyInfo.cs
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.AssemblyInfoInputs.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.AssemblyInfo.cs
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.RazorTargetAssemblyInfo.cache
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.dll
+C:\Users\javbecsa\Documents\Javi\AES\Patrones\AES_SOBS_PS\PdfGenerator\PdfGenerator\obj\Debug\netcoreapp2.1\PdfGenerator.pdb

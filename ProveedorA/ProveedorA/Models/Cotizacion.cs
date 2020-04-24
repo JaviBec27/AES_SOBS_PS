@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace ProveedorA.Models
+{
+    public partial class Cotizacion
+    {
+        public int IdCotizacion { get; set; }
+        public DateTime FechaCotizacion { get; set; }
+        public int IdUsuario { get; set; }
+        public int IdProducto { get; set; }
+        public string Referencia { get; set; }
+        public int Cantidad { get; set; }
+        public bool? Procesada { get; set; }
+    }
+}

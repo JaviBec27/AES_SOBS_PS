@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\javbecsa\\Documents\\Javi\\AES\\Patrones\\AES_SOBS_PS\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\javbecsa\\Documents\\Javi\\AES\\Patrones\\AES_SOBS_PS\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javbecsa\\Documents\\Javi\\AES\\Patrones\\AES_SOBS_PS\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService.csproj",
+        "projectName": "AES_Patrones_BusQueueService",
+        "projectPath": "C:\\Users\\javbecsa\\Documents\\Javi\\AES\\Patrones\\AES_SOBS_PS\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService.csproj",
+        "packagesPath": "C:\\Users\\javbecsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javbecsa\\Documents\\Javi\\AES\\Patrones\\AES_SOBS_PS\\AES_Patrones_BusQueueService\\AES_Patrones_BusQueueService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javbecsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.Azure.Management.ResourceManager": {
+              "target": "Package",
+              "version": "[3.6.0-preview, )"
+            },
+            "Microsoft.Azure.Management.ServiceBus": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20160.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20160.3, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20160.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20160.3, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20160.3, )"
+            },
+            "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

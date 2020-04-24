@@ -1,0 +1,27 @@
+.company-info-wrapper {
+    width: 44%;
+    background-color: #dddddd;
+    border: none;
+    .logo-wrapper {
+        text-align: center;
+        img {
+            width: 89%;
+        }
+    }
+    .info-wrapper {
+        padding-top: 2em;
+        .version-info {
+            span {
+                display: block;
+                color: #ff0000;
+            }
+        }
+        .thought-label {
+            color: #19376B;
+            font-size: 18px;
+        }
+        .thought-text {
+            color: #19376B;
+        }
+    }
+}

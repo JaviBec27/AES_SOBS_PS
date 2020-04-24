@@ -1,0 +1,83 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>{{ "lblFinishOrder" | translate }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p-table
+            #dt
+            [columns]="cols"
+            [value]="lstProducts2"
+            [paginator]="true"
+            [scrollable]="true"
+            scrollHeight="400px"
+            [resizableColumns]="true"
+          >
+          <!-- <ng-template pTemplate="colgroup" let-columns>
+            <colgroup>
+                <col *ngFor="let col of columns" style="width:150px">
+            </colgroup>
+        </ng-template> -->
+            <ng-template pTemplate="header" let-columns>
+              <tr>
+                <th
+                  *ngFor="let col of columns"
+                  [pSortableColumn]="col.field"
+                  [class]="col.class"
+                  pResizableColumn
+                >
+                  {{ col.header }}
+                  <p-sortIcon
+                    *ngIf="col.field != 'option' && col.field === fieldSortIcon"
+                    [field]="col.field"
+                    ariaLabel="Activate to sort"
+                    ariaLabelDesc="Activate to sort in descending order"
+                    ariaLabelAsc="Activate to sort in ascending order"
+                  ></p-sortIcon>
+                </th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-columns="columns">
+              <tr
+                [pSelectableRow]="rowData"
+                [pSelectableRowIndex]="rowIndex"
+                [pSelectableRowDisabled]="rowData"
+              >
+                 <td
+                  *ngFor="let col of columns"
+                  class="{{ col.class }}"
+                ></td> 
+                <!-- <div *ngSwitchDefault data-toggle="tooltip" [title]="rowData[col.field]"> {{rowData[col.field]}}</div>
+                <div *ngSwitchCase="'option'">
+                <input type="button" [value]="rowData" (click)="deleteProduct(rowData)">
+                </div> -->
+                
+              </tr>
+            </ng-template>
+          </p-table>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <input
+      type="button"
+      class="btn btn-primary"
+      (click)="submit()"
+      value="{{ 'lblSubmit' | translate }}"
+    />
+    <input
+      type="button"
+      class="btn btn-danger"
+      (click)="cancel()"
+      value="{{ 'lblCancel' | translate }}"
+    />
+  </div>
+</div>
